@@ -1,31 +1,31 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
-// import Head from "next/head";
+// import { Metadata } from "next";
 
-// import AboutPage from "./about/page";
-// import ContactPage from "./contact/page";
 import Header from "./header/header.js";
 import Footer from "./footer/footer.js";
 
-// const inter = Inter({ subsets: ["latin"] });
+import { GoogleAnalytics } from '@next/third-parties/google';
 
-// export const metadata = {
-//   description: 'Logan Meeks Web Development',
-//   icons: {
-//     icon: [
-//       {
-//         media: '(prefers-color-scheme: light)',
-//         url: '/favicon-dark.ico',
-//         href: "/favicon-dark.ico",
-//       },
-//       {
-//         media: '(prefers-color-scheme: dark)',
-//         url: '/favicon-light.ico',
-//         href: "/favicon-light.ico",
-//       }
-//     ]
-//   }
-// };
+export const metadata = {
+  // title: "Your Title",
+  icons: {
+    icon: [
+      {
+        rel: "icon",
+        media: "(prefers-color-scheme: light)",
+        type: "image/x-icon",
+        url: "/favicon-dark.ico",
+      },
+      {
+        rel: "icon",
+        media: "(prefers-color-scheme: dark)",
+        type: "image/x-icon",
+        url: "/favicon-light.ico",
+      },
+    ],
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -38,18 +38,18 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <meta name="theme-color" content="#000000" /> */}
 
-        <link
+        {/* <link
           rel="icon"
-          href="%PUBLIC_URL%/favicon-dark.ico"
-          sizes="16x16"
+          href="/favicon-dark.ico"
+          sizes="all"
           media="(prefers-color-scheme: light)"
         />
         <link
           rel="icon"
-          href="%PUBLIC_URL%/favicon-light.ico"
-          sizes="16x16"
+          href="/favicon-light.ico"
+          sizes="all"
           media="(prefers-color-scheme: dark)"
-        />
+        /> */}
       </head>
       
       <body className="m-0 grid min-h-[100vh] bg-gradient-to-br from-white to-white bg-fixed text-black dark:from-shakespeare-900 dark:to-shakespeare-bg dark:text-white">
@@ -57,6 +57,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-JVHLSHJL5B" />
     </html>
   );
 }

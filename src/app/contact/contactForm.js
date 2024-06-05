@@ -1,5 +1,8 @@
 'use client';
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import {
     Button,
     FieldError,
@@ -11,8 +14,29 @@ import {
   } from "react-aria-components";
 
 export default function ContactForm() {
+    const form = useRef();
+
+    function handleSubmit(e) {
+      e.preventDefault();
+
+      // if(!state.name || !state.email || !state.message) return;
+      emailjs
+          .sendForm('contact-me-service', 'contact-me-form', form.current, {publicKey: 'VWBEw-ZfWtOWTBsxF'})
+          .then(
+              () => {
+                  console.log('SUCCESS!');
+                  form.current.reset();
+                  alert('Message Sent!');
+              },
+              (error) => {
+                  console.log('FAILED...', error.text);
+                  alert('Message failed to send.');
+              }
+          );
+    }
+
     return (
-        <Form className="mt-6 min-w-72 flex-1">
+        <Form ref={form} onSubmit={handleSubmit} className="mt-6 min-w-72 flex-1 flex flex-col sm:block">
             <TextField
               name="name"
               type="text"
@@ -51,7 +75,7 @@ export default function ContactForm() {
             </TextField>
             <Button
               type="submit"
-              className="float-right ml-2 rounded-full bg-shakespeare-600 px-2 py-px text-xl text-white hover:bg-shakespeare-500 pressed:bg-shakespeare-700"
+              className="sm:float-right sm:ml-2 self-center rounded-full bg-shakespeare-600 px-2 py-px text-xl text-white hover:bg-shakespeare-500 pressed:bg-shakespeare-700"
             >
               Send Message &gt;&gt;
             </Button>

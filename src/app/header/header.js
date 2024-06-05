@@ -4,7 +4,7 @@ import Logo from "/public/Logo";
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-shakespeare-700 px-6 py-2 text-2xl text-white dark:bg-shakespeare-bg">
+    <header className="sticky top-0 z-50 bg-shakespeare-700 px-6 py-2 text-2xl text-white dark:bg-shakespeare-bg">
       <Link
         href="/"
         className="hover:text-shakespeare-500 pressed:text-shakespeare-600"
@@ -14,7 +14,7 @@ function Header() {
           className="float-left mr-1 inline-block size-8 dark:hidden"
         />
         <Logo className="float-left mr-1 hidden size-8 dark:inline-block" />
-        <span>Logan Meeks</span>
+        <span className="sm:inline hidden" >Logan Meeks</span>
       </Link>
 
       <nav className="float-right flex h-8 items-center text-base">

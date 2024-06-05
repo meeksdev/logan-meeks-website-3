@@ -22,7 +22,7 @@ function LandingPage() {
             Services
           </h1>
           <Tabs className="flex border border-shakespeare-600 dark:border-shakespeare-500">
-            <TabList className="min-w-[232px] justify-self-start border-e bg-shakespeare-50 dark:bg-shakespeare-700">
+            <TabList className="min-w-[232px] justify-self-start bg-shakespeare-50 dark:bg-shakespeare-700">
               <Tab
                 id="design"
                 className="border-e-4 border-e-transparent px-4 py-1  hover:cursor-pointer hover:bg-shakespeare-600 hover:text-white selected:border-e-4 selected:border-e-shakespeare-600 selected:outline-none dark:hover:bg-shakespeare dark:pressed:bg-shakespeare-600 dark:selected:border-e-shakespeare-500"
@@ -57,7 +57,7 @@ function LandingPage() {
             <TabPanel
               id="design"
             >
-              <Image src={dbSchemaImage} />
+              <Image src={dbSchemaImage} className="border-none" />
               <p className="text-center font-bold text-shakespeare-700 dark:text-white">
                 Tailored websites that captivate your audience and elevate your
                 brand.
@@ -106,8 +106,8 @@ function LandingPage() {
           <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
             Top Portfolio Projects
           </h1>
-          <Tabs className="text-center">
-            <TabList className="flex border border-b border-shakespeare-600 bg-shakespeare-50 dark:border-shakespeare-500 dark:bg-shakespeare-700">
+          <Tabs className="text-center border border-shakespeare-600 dark:border-shakespeare-500">
+            <TabList className="flex bg-shakespeare-50 dark:bg-shakespeare-700">
               <Tab
                 id="id1"
                 className="flex-1 border-b-4 border-b-transparent hover:cursor-pointer hover:bg-shakespeare-600 hover:text-white selected:border-b-4 selected:border-b-shakespeare-600 selected:outline-none dark:hover:bg-shakespeare dark:pressed:bg-shakespeare-600 dark:selected:border-b-shakespeare-500"
@@ -129,19 +129,16 @@ function LandingPage() {
             </TabList>
             <TabPanel
               id="id1"
-              className="border  border-shakespeare-600 dark:border-shakespeare-500"
             >
               <Image src={portfolioImage1} />
             </TabPanel>
             <TabPanel
               id="id2"
-              className="border  border-shakespeare-600 dark:border-shakespeare-500"
             >
               <Image src={portfolioImage2} />
             </TabPanel>
             <TabPanel
               id="id3"
-              className="border  border-shakespeare-600 dark:border-shakespeare-500"
             >
               <Image src={portfolioImage3} />
             </TabPanel>
