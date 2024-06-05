@@ -81,7 +81,7 @@ function AboutPage() {
             </h3>
             <p>Full Stack Engineering Certification</p>
             <p>10 Years Programming Experience</p>
-            <p>Bachelor's Degree in Mechanical Engineering</p>
+            <p>Bachelor&apos;s Degree in Mechanical Engineering</p>
             <p>CSWP Certification</p>
           </section>
 
@@ -115,10 +115,10 @@ function AboutPage() {
                   web solutions that empower businesses to achieve their goals.
                   I combine engineering precision with creative problem-solving
                   to develop custom websites and automation solutions tailored
-                  to each client's unique needs. By leveraging my diverse skill
+                  to each client&apos;s unique needs. By leveraging my diverse skill
                   set and passion for technology, I strive to add value and
                   drive success for my clients in an ever-evolving digital
-                  landscape. Let's connect and build something exceptional
+                  landscape. Let&apos;s connect and build something exceptional
                   together.
                 </p>
               </section>

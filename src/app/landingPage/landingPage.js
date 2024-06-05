@@ -160,11 +160,11 @@ function LandingPage() {
                   “
                 </span>
                 <p className="pb-4 text-justify">
-                  I can't thank [Web Developer's Name] enough for the incredible
+                  I can&apos;t thank Web Developer&apos;s Name enough for the incredible
                   work they did on our website. Not only did they deliver a
                   stunning design, but their responsiveness and dedication
                   throughout the process were unmatched. Our website is now a
-                  true reflection of our brand's identity.
+                  true reflection of our brand&apos;s identity.
                 </p>
               </div>
               {/* <div className='bg-slate-700 rounded-lg'> */}
@@ -183,11 +183,11 @@ function LandingPage() {
                   “
                 </span>
                 <p className="pb-4 text-justify">
-                  I can't thank [Web Developer's Name] enough for the incredible
+                  I can&apos;t thank Web Developer&apos;s Name enough for the incredible
                   work they did on our website. Not only did they deliver a
                   stunning design, but their responsiveness and dedication
                   throughout the process were unmatched. Our website is now a
-                  true reflection of our brand's identity.
+                  true reflection of our brand&apos;s identity.
                 </p>
               </div>
               {/* <div className='bg-slate-700 rounded-lg'> */}
@@ -206,11 +206,11 @@ function LandingPage() {
                   “
                 </span>
                 <p className="pb-4 text-justify">
-                  I can't thank [Web Developer's Name] enough for the incredible
+                  I can&apos;t thank Web Developer&apos;s Name enough for the incredible
                   work they did on our website. Not only did they deliver a
                   stunning design, but their responsiveness and dedication
                   throughout the process were unmatched. Our website is now a
-                  true reflection of our brand's identity.
+                  true reflection of our brand&apos;s identity.
                 </p>
               </div>
               {/* <div className='bg-slate-700 rounded-lg'> */}
@@ -233,7 +233,7 @@ function LandingPage() {
           </h1>
           <p className="pb-4 text-justify">
             "Welcome to Logan Meeks Web Development - where innovation meets
-            creativity to craft exceptional digital experiences. I'm passionate
+            creativity to craft exceptional digital experiences. I&apos;m passionate
             about leveraging cutting-edge technology to bring your vision to
             life. With a keen eye for design and a relentless pursuit of
             perfection, I specialize in creating bespoke websites that not only
@@ -243,11 +243,11 @@ function LandingPage() {
             apart is my unwavering dedication to my clients. I believe that
             collaboration is key to success, which is why I work closely with
             you every step of the way to ensure that your project is a true
-            reflection of your vision and goals. Whether you're a small business
+            reflection of your vision and goals. Whether you&apos;re a small business
             looking to establish your online presence or a large corporation
-            seeking to redefine it, I'm here to help. Let's embark on this
+            seeking to redefine it, I&apos;m here to help. Let&apos;s embark on this
             journey together and transform your digital aspirations into
-            reality. Get in touch with me today and let's create something
+            reality. Get in touch with me today and let&apos;s create something
             extraordinary."
           </p>
         </section>
