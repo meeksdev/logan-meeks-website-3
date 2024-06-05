@@ -232,7 +232,7 @@ function LandingPage() {
             About Me
           </h1>
           <p className="pb-4 text-justify">
-            "Welcome to Logan Meeks Web Development - where innovation meets
+            Welcome to Logan Meeks Web Development - where innovation meets
             creativity to craft exceptional digital experiences. I&apos;m passionate
             about leveraging cutting-edge technology to bring your vision to
             life. With a keen eye for design and a relentless pursuit of
@@ -248,7 +248,7 @@ function LandingPage() {
             seeking to redefine it, I&apos;m here to help. Let&apos;s embark on this
             journey together and transform your digital aspirations into
             reality. Get in touch with me today and let&apos;s create something
-            extraordinary."
+            extraordinary.
           </p>
         </section>
       </main>
