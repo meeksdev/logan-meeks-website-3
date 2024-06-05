@@ -1,18 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  // darkMode: ['selector', '[data-mode="dark"]'],
+  darkMode: "selector",
   theme: {
     extend: {
+      colors: {
+        shakespeare: {
+          DEFAULT: "#18b0dd",
+          50: "#edfcfe",
+          100: "#d3f4fa",
+          200: "#abe8f6",
+          300: "#72d6ee",
+          400: "#31badf",
+          500: "#18b0dd",
+          600: "#157da5",
+          700: "#186586",
+          800: "#1c536e",
+          900: "#1c465d",
+          950: "#0c2d40",
+          bg: "#0F1B28",
+        },
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-pattern": "url('/Hero-Image.jpg')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-react-aria-components")],
 };
