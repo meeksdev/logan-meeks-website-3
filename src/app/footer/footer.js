@@ -1,5 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+
 // import { FaF } from "react-icons/fa6";
 import Logo from "/public/Logo";
 
@@ -42,6 +44,9 @@ function Footer() {
         </h1>
         <a href="#">
           <FaFacebook className="mx-1 inline size-8 hover:text-shakespeare pressed:text-shakespeare-600" />
+        </a>
+        <a href="#">
+          <FaInstagram className="mx-1 inline size-8 hover:text-shakespeare pressed:text-shakespeare-600" />
         </a>
         <a href="#">
           <FaLinkedin className="mx-1 inline size-8 hover:text-shakespeare pressed:text-shakespeare-600" />

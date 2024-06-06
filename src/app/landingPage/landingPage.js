@@ -1,9 +1,13 @@
 import Hero from "./Hero/Hero";
-import dbSchemaImage from "./assets/dbSchema.jpg";
-import trendImage from "./assets/trend-image.jpg";
-import portfolioImage1 from "./assets/image-1.png";
-import portfolioImage2 from "./assets/image-2.png";
-import portfolioImage3 from "./assets/image-3.png";
+import design from "./assets/design.svg";
+import database from "./assets/database.svg";
+import ecommerce from "./assets/ecommerce.svg";
+import responsive from "./assets/responsive.svg";
+import seo from "./assets/seo.svg";
+
+// import portfolioImage1 from "./assets/image-1.png";
+// import portfolioImage2 from "./assets/image-2.png";
+// import portfolioImage3 from "./assets/image-3.png";
 
 // import { Tab, TabList, TabPanel, Tabs } from "react-aria-components";
 import { Tab, TabList, TabPanel, Tabs } from "./tabImports";
@@ -18,11 +22,11 @@ function LandingPage() {
       <main className="m-auto max-w-[1080px] px-8">
         {/* Services */}
         <section className="my-32">
-          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
+          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
             Services
           </h1>
-          <Tabs className="flex border border-shakespeare-600 dark:border-shakespeare-500">
-            <TabList className="min-w-[232px] justify-self-start bg-shakespeare-50 dark:bg-shakespeare-700">
+          <Tabs className="flex flex-col sm:flex-row border border-shakespeare-600 dark:border-shakespeare-500">
+            <TabList className="min-w-[232px] text-center sm:text-left justify-self-start bg-shakespeare-50 dark:bg-shakespeare-700">
               <Tab
                 id="design"
                 className="border-e-4 border-e-transparent px-4 py-1  hover:cursor-pointer hover:bg-shakespeare-600 hover:text-white selected:border-e-4 selected:border-e-shakespeare-600 selected:outline-none dark:hover:bg-shakespeare dark:pressed:bg-shakespeare-600 dark:selected:border-e-shakespeare-500"
@@ -54,56 +58,63 @@ function LandingPage() {
                 Database Integration
               </Tab>
             </TabList>
+            {/* <div className="flex-1 min-h-[400px]"> */}
             <TabPanel
               id="design"
+              className='w-full'
             >
-              <Image src={dbSchemaImage} className="border-none" />
-              <p className="text-center font-bold text-shakespeare-700 dark:text-white">
+              <p className="text-center font-bold text-white bg-shakespeare-700 dark:text-white dark:bg-shakespeare-bg">
                 Tailored websites that captivate your audience and elevate your
                 brand.
               </p>
+              <Image src={design} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="development"
+              className='w-full'
             >
-              <Image src={dbSchemaImage} />
-              <p className="text-center font-bold text-shakespeare-700 dark:text-white">
+              <p className="text-center font-bold text-white bg-shakespeare-700 dark:text-white dark:bg-shakespeare-bg">                
                 Engage users on all devices with seamless, responsive website
                 experiences.
               </p>
+              <Image src={responsive} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="ecommerce"
+              className='w-full'
             >
-              <Image src={dbSchemaImage} />
-              <p className="text-center font-bold text-shakespeare-700 dark:text-white">
+              <p className="text-center font-bold text-white bg-shakespeare-700 dark:text-white dark:bg-shakespeare-bg">                
                 Powerful online stores optimized for maximum sales and
                 conversions.
               </p>
+              <Image src={ecommerce} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="seo"
+              className='w-full'
             >
-              <Image src={trendImage} />
-              <p className="text-center font-bold text-shakespeare-700 dark:text-white">
+              <p className="text-center font-bold text-white bg-shakespeare-700 dark:text-white dark:bg-shakespeare-bg">                
                 Dominate search engine rankings and attract more organic
                 traffic.
               </p>
+              <Image src={seo} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="database"
+              className='w-full'
             >
-              <Image src={dbSchemaImage} />
-              <p className="text-center font-bold text-shakespeare-700 dark:text-white">
-                ...
+              <p className="text-center font-bold text-white bg-shakespeare-700 dark:text-white dark:bg-shakespeare-bg">
+                Streamline your business operations by connecting your website with powerful backend systems.
               </p>
+              <Image src={database} className="object-contain aspect-square w-full max-h-[550px] p-2 mx-auto" />
             </TabPanel>
+            {/* </div> */}
           </Tabs>
         </section>
 
         {/* Portfolio Projects */}
-        <section className="my-32">
-          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
+        {/* <section className="my-32">
+          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
             Top Portfolio Projects
           </h1>
           <Tabs className="text-center border border-shakespeare-600 dark:border-shakespeare-500">
@@ -143,11 +154,11 @@ function LandingPage() {
               <Image src={portfolioImage3} />
             </TabPanel>
           </Tabs>
-        </section>
+        </section> */}
 
         {/* Client Testimonials */}
-        <section className="my-32">
-          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
+        {/* <section className="my-32">
+          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
             Client Testimonials
           </h1>
           <div className="flex flex-wrap gap-2">
@@ -164,7 +175,6 @@ function LandingPage() {
                   true reflection of our brand&apos;s identity.
                 </p>
               </div>
-              {/* <div className='bg-slate-700 rounded-lg'> */}
               <div>
                 <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
                   Nobody Ever
@@ -187,7 +197,6 @@ function LandingPage() {
                   true reflection of our brand&apos;s identity.
                 </p>
               </div>
-              {/* <div className='bg-slate-700 rounded-lg'> */}
               <div>
                 <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
                   Nobody Ever
@@ -210,7 +219,6 @@ function LandingPage() {
                   true reflection of our brand&apos;s identity.
                 </p>
               </div>
-              {/* <div className='bg-slate-700 rounded-lg'> */}
               <div>
                 <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
                   Nobody Ever
@@ -221,11 +229,11 @@ function LandingPage() {
               </div>
             </section>
           </div>
-        </section>
+        </section> */}
 
         {/* About Section */}
         <section className="my-32">
-          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
+          <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
             About Me
           </h1>
           <p className="pb-4 text-justify">
