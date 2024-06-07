@@ -16,7 +16,7 @@ function AboutPage() {
   return (
     <>
       <title>About</title>
-      <main className="mx-auto mb-[32px] max-w-[1080px] px-8">
+      <main className="mx-auto mb-[32px] max-w-[1080px] px-6 sm:px-8">
         <h1 className="mb-2 mt-32 text-center text-6xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
           About
         </h1>
@@ -86,7 +86,7 @@ function AboutPage() {
           </section>
 
           <section className="flex-1 text-justify">
-            <div className="mx-auto min-w-[350px] max-w-[1080px]">
+            <div className="mx-auto min-w-[310px] max-w-[1080px]">
               {/* About Me */}
               <section className="my-[32px]">
                 <h2 className="my-2 text-center text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">

@@ -19,7 +19,7 @@ function LandingPage() {
     <>
       <title>Logan Meeks</title>
       <Hero />
-      <main className="m-auto max-w-[1080px] px-8">
+      <main className="m-auto max-w-[1080px] px-6 sm:px-8">
         {/* Services */}
         <section className="my-32">
           <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
