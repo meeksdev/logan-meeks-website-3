@@ -67,7 +67,7 @@ function LandingPage() {
                 Tailored websites that captivate your audience and elevate your
                 brand.
               </p>
-              <Image src={design} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
+              <Image src={design} alt="Illustration of laptop displaying generic website outline." className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="development"
@@ -77,7 +77,7 @@ function LandingPage() {
                 Engage users on all devices with seamless, responsive website
                 experiences.
               </p>
-              <Image src={responsive} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
+              <Image src={responsive} alt="Illustration of desktop monitor, laptop, tablet, and smart phone." className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="ecommerce"
@@ -87,7 +87,7 @@ function LandingPage() {
                 Powerful online stores optimized for maximum sales and
                 conversions.
               </p>
-              <Image src={ecommerce} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
+              <Image src={ecommerce} alt="Illustration of smart phone with marketplace awning overtop and a buy button centered on the screen." className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="seo"
@@ -97,7 +97,7 @@ function LandingPage() {
                 Dominate search engine rankings and attract more organic
                 traffic.
               </p>
-              <Image src={seo} className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
+              <Image src={seo} alt="Illustration of bar graph and an arrow indicating an upward trend." className="object-contain aspect-square max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             <TabPanel
               id="database"
@@ -106,7 +106,7 @@ function LandingPage() {
               <p className="text-center font-bold text-white bg-shakespeare-700 dark:text-white dark:bg-shakespeare-bg">
                 Streamline your business operations by connecting your website with powerful backend systems.
               </p>
-              <Image src={database} className="object-contain aspect-square w-full max-h-[550px] p-2 mx-auto" />
+              <Image src={database} alt="Illustration of database schema." className="object-contain aspect-square w-full max-h-[550px] p-2 mx-auto" />
             </TabPanel>
             {/* </div> */}
           </Tabs>
