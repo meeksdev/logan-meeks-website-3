@@ -32,7 +32,7 @@ export default function ContactForm() {
                   console.log('FAILED...', error.text);
                   alert('Message failed to send.');
               }
-          );
+      );
     }
 
     return (
