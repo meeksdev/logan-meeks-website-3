@@ -42,13 +42,13 @@ function Footer() {
         <h1 className="mb-1 font-bold dark:text-shakespeare-200">
           Social Media
         </h1>
-        <a href="www.facebook.com/profile.php?id=61560763913124">
+        <a href="https://www.facebook.com/profile.php?id=61560763913124" rel="noopener noreferrer">
           <FaFacebook className="mx-1 inline size-8 hover:text-shakespeare pressed:text-shakespeare-600" />
         </a>
-        <a href="www.instagram.com/meeksdev/">
+        <a href="https://www.instagram.com/meeksdev/" rel="noopener noreferrer">
           <FaInstagram className="mx-1 inline size-8 hover:text-shakespeare pressed:text-shakespeare-600" />
         </a>
-        <a href="www.linkedin.com/company/meeksdev">
+        <a href="https://www.linkedin.com/company/meeksdev" rel="noopener noreferrer">
           <FaLinkedin className="mx-1 inline size-8 hover:text-shakespeare pressed:text-shakespeare-600" />
         </a>
       </section>
