@@ -17,7 +17,7 @@ import Image from "next/image";
 function LandingPage() {
   return (
     <>
-      <title>Logan Meeks</title>
+      <title>Logan Meeks Web Development</title>
       <Hero />
       <main className="m-auto max-w-[1080px] px-6 sm:px-8">
         {/* Services */}
