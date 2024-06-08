@@ -17,7 +17,7 @@ function Header() {
         <span className="sm:inline hidden" >Logan Meeks</span>
       </Link>
 
-      <nav className="float-right flex h-8 items-center text-base">
+      <nav className="float-right flex h-8 items-center text-base" suppressHydrationWarning>
         <ThemeSwitch />
         <Link href="/about" className="ml-2 rounded-full px-2 hover:bg-shakespeare-500 pressed:bg-shakespeare-600">
           About

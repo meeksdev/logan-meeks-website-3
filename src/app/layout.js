@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "./header/header.js";
 import Footer from "./footer/footer.js";
+import { Providers } from "./providers";
 
 import { GoogleAnalytics } from '@next/third-parties/google';
 
@@ -29,7 +30,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8"/>
         <meta name="description" content="Logan Meeks Web Development" />
@@ -53,9 +54,11 @@ export default function RootLayout({ children }) {
       </head>
       
       <body className="m-0 grid min-h-[100vh] bg-gradient-to-br from-white to-white bg-fixed text-black dark:from-shakespeare-900 dark:to-shakespeare-bg dark:text-white">
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
       <GoogleAnalytics gaId="G-JVHLSHJL5B" />
     </html>
