@@ -8,6 +8,7 @@ function Header() {
       <Link
         href="/"
         className="hover:text-shakespeare-500 pressed:text-shakespeare-600"
+        aria-label="Home Page"
       >
         <Logo
           accentColor="#72d6ee"

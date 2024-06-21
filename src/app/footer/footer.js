@@ -27,13 +27,13 @@ function Footer() {
         </h1>
         <a
           href="mailto:loganmeeksllc@gmail.com"
-          className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare"
+          className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare py-2"
         >
           loganmeeksllc@gmail.com
         </a>
         <a
           href="tel:+1-702-521-7541"
-          className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare"
+          className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare py-2"
         >
           +1 (702) 521-7541
         </a>
