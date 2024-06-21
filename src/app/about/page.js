@@ -28,8 +28,11 @@ function AboutPage() {
               Summary
             </h2>
             <Image
+              priority
               src={portrait}
               alt="Photo Portrait of Logan Meeks"
+              placeholder="blur"
+              sizes="100vw"
               className="mx-auto size-40 rounded-full border-2 border-shakespeare-600 object-cover dark:border-shakespeare-200"
             />
             <h3 className="mb-1  mt-2 font-bold text-shakespeare-600 dark:text-shakespeare-200">
