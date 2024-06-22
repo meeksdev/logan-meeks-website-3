@@ -4,12 +4,13 @@ import portrait from "/public/aboutPage/portrait.jpg";
 import {
   SiCplusplus,
   SiCsharp,
-  SiBlender,
+  // SiBlender,
   SiArduino,
   SiVisualbasic,
   SiJavascript,
   SiReact,
 } from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
 import SolidworksIcon from "/public/aboutPage/SolidworksIcon";
 
 export const metadata = {
@@ -49,6 +50,11 @@ function AboutPage() {
               title="React"
               alt="React"
             />
+            <RiNextjsLine 
+              className="inline-block size-9 px-[2px]"
+              title="Next.js"
+              alt="Next.js"
+            />
             <SiJavascript
               className="inline-block size-9 px-[2px]"
               title="Javascript"
@@ -74,16 +80,10 @@ function AboutPage() {
               title="Visual Basic"
               alt="Visual Basic"
             />
-            {/* <img src={solidworksIcon} className='size-9 inline-block px-[2px]' title='Solidworks' alt='Solidworks' /> */}
             <SolidworksIcon
               className="inline-block size-9 px-[2px]"
               title="Solidworks"
               alt="Solidworks"
-            />
-            <SiBlender
-              className="inline-block size-9 px-[2px]"
-              title="Blender"
-              alt="Blender"
             />
             <h3 className="mt-2 font-bold text-shakespeare-600 dark:text-shakespeare-200">
               Experience
