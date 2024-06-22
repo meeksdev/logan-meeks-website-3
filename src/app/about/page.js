@@ -12,10 +12,16 @@ import {
 } from "react-icons/si";
 import SolidworksIcon from "/public/aboutPage/SolidworksIcon";
 
+export const metadata = {
+  title: "About | Logan Meeks Web Development",
+  description: "Learn more about Logan Meeks Web Development, my mission, vision, and dedication to delivering exceptional web design and development services.",
+  keywords: ["Logan Meeks", "about", "web design", "web development", "mission", "vision"],
+};
+
 function AboutPage() {
   return (
     <>
-      <title>About</title>
+      {/* <title>About</title> */}
       <main className="mx-auto mb-[32px] max-w-[1080px] px-6 sm:px-8">
         <h1 className="mb-2 mt-32 text-center text-6xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
           About

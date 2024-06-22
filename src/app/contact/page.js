@@ -10,10 +10,16 @@
 
 import ContactForm from "./contactForm";
 
+export const metadata = {
+  title: "Contact | Logan Meeks Web Development",
+  description: "Get in touch with Logan Meeks Web Development for professional web design and development services. Contact us today to discuss your project.",
+  keywords: ["Logan Meeks Web Development", "contact", "web design", "web development", "get in touch", "contact information"],
+};
+
 function ContactPage() {
   return (
     <>
-      <title>Contact Me</title>
+      {/* <title>Contact Me</title> */}
       <main className="mx-auto mb-[32px] w-full max-w-[1080px] px-6 sm:px-8">
         <h1 className="mb-2 mt-32 text-center text-6xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
           Contact Me

@@ -9,7 +9,11 @@ import { Providers } from "./providers";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata = {
-  // title: "Your Title",
+  charSet: "UTF-8",
+  title: "Logan Meeks - Professional Web Design & Development Services",
+  description: "Unlock the potential of your online business with stunning website designs and custom web development applications tailored to your vision & goals.",
+  keywords: ["Logan Meeks", "web design", "web development", "custom websites", "web development company"],
+  author: "Logan Meeks",
   icons: {
     icon: [
       {
@@ -26,17 +30,33 @@ export const metadata = {
       },
     ],
   },
+  metadataBase: new URL('https://meeksdev.com'),
+  openGraph: {
+    title: "Logan Meeks - Professional Web Design & Development Services",
+    description: "Unlock the potential of your online business with stunning website designs and custom web development applications tailored to your vision & goals.",
+    url: 'https://meeksdev.com',
+    siteName: 'Logan Meeks Web Development',
+    // images: [
+    //   {
+    //     url: 'https://meeksdev.com/og-image.jpg',
+    //     width: 1200,
+    //     height: 630,
+    //     alt: 'Logan Meeks Web Development'
+    //   }
+    // ],
+    locale: 'en-US',
+    type: 'website',
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta charSet="UTF-8"/>
+        {/* <meta charSet="UTF-8"/>
         <meta name="description" content="Logan Meeks Web Development" />
         <meta name="keywords" content="Logan, Meeks, Web, Development" />
-        <meta name="author" content="Logan Meeks" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Logan Meeks" /> */}
         {/* <meta name="theme-color" content="#000000" /> */}
 
         {/* <link
