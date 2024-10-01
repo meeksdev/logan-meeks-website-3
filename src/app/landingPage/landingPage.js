@@ -5,6 +5,8 @@ import ecommerce from "./assets/ecommerce.svg";
 import responsive from "./assets/responsive.svg";
 import seo from "./assets/seo.svg";
 
+import { RxStarFilled } from "react-icons/rx";
+
 // import portfolioImage1 from "./assets/image-1.png";
 // import portfolioImage2 from "./assets/image-2.png";
 // import portfolioImage3 from "./assets/image-3.png";
@@ -14,13 +16,29 @@ import { Tab, TabList, TabPanel, Tabs } from "./tabImports";
 
 import Image from "next/image";
 
+const testimonials = [
+  {name: "Joshua Gore", position: "Sr. Product Designer", company: "Wraithworks", companyURL: 'https://wraithworks.com', rating: 5, testimonial: "I was extremely happy with Logan's work, communication, and results. Logan is a self starter who can execute with minimal information to a maximal result. I will be happy to work with him again."},
+]
+
 function LandingPage() {
+  function ReviewStars({ rating }) {
+    // Ensure the rating is between 1 and 5
+    const validRating = Math.min(Math.max(rating, 1), 5);
+  
+    return (
+        Array.from({ length: validRating }, (_, index) => (
+          <RxStarFilled className="size-6"/>
+        ))
+    );
+  }
+  
+
   return (
     <>
       {/* <title>Logan Meeks Web Development</title> */}
       <Hero />
       <main className="m-auto max-w-[1080px] px-6 sm:px-8">
-        {/* Services */}
+        {/* Services */} 
         <section className="my-32">
           <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
             Services
@@ -157,79 +175,37 @@ function LandingPage() {
         </section> */}
 
         {/* Client Testimonials */}
-        {/* <section className="my-32">
+        <section className="my-32">
           <h1 className="mb-2 text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200 text-center sm:text-left">
             Client Testimonials
           </h1>
-          <div className="flex flex-wrap gap-2">
-            <section className="flex min-w-64 flex-1 flex-col justify-between rounded-lg border border-shakespeare-600 bg-shakespeare-50 p-2 dark:border-shakespeare-500 dark:bg-shakespeare-700">
-              <div>
-                <span className="text-2xl font-bold text-shakespeare-500 dark:text-shakespeare-300">
-                  “
-                </span>
-                <p className="pb-4 text-justify">
-                  I can&apos;t thank Web Developer&apos;s Name enough for the incredible
-                  work they did on our website. Not only did they deliver a
-                  stunning design, but their responsiveness and dedication
-                  throughout the process were unmatched. Our website is now a
-                  true reflection of our brand&apos;s identity.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
-                  Nobody Ever
-                </h2>
-                <h3 className="text-center text-shakespeare-700 dark:text-shakespeare-100">
-                  CEO, XYZ Company
-                </h3>
-              </div>
-            </section>
-            <section className="flex min-w-64 flex-1 flex-col justify-between rounded-lg border border-shakespeare-600 bg-shakespeare-50 p-2 dark:border-shakespeare-500 dark:bg-shakespeare-700">
-              <div>
-                <span className="text-2xl font-bold text-shakespeare-500 dark:text-shakespeare-300">
-                  “
-                </span>
-                <p className="pb-4 text-justify">
-                  I can&apos;t thank Web Developer&apos;s Name enough for the incredible
-                  work they did on our website. Not only did they deliver a
-                  stunning design, but their responsiveness and dedication
-                  throughout the process were unmatched. Our website is now a
-                  true reflection of our brand&apos;s identity.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
-                  Nobody Ever
-                </h2>
-                <h3 className="text-center text-shakespeare-700 dark:text-shakespeare-100">
-                  CEO, XYZ Company
-                </h3>
-              </div>
-            </section>
-            <section className="flex min-w-64 flex-1 flex-col justify-between rounded-lg border border-shakespeare-600 bg-shakespeare-50 p-2 dark:border-shakespeare-500 dark:bg-shakespeare-700">
-              <div>
-                <span className="text-2xl font-bold text-shakespeare-500 dark:text-shakespeare-300">
-                  “
-                </span>
-                <p className="pb-4 text-justify">
-                  I can&apos;t thank Web Developer&apos;s Name enough for the incredible
-                  work they did on our website. Not only did they deliver a
-                  stunning design, but their responsiveness and dedication
-                  throughout the process were unmatched. Our website is now a
-                  true reflection of our brand&apos;s identity.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
-                  Nobody Ever
-                </h2>
-                <h3 className="text-center text-shakespeare-700 dark:text-shakespeare-100">
-                  CEO, XYZ Company
-                </h3>
-              </div>
-            </section>
+          <div className="flex flex-wrap justify-center gap-2">
+            {testimonials.map(({name, position, company, companyURL, rating, testimonial}) => {
+              return (
+              <section className="flex min-w-64 max-w-96 flex-1 flex-col justify-between rounded-lg border border-shakespeare-600 bg-shakespeare-50 p-2 dark:border-shakespeare-500 dark:bg-shakespeare-700">
+                <div>
+                  <span className="text-2xl font-bold text-shakespeare-500 dark:text-shakespeare-300">
+                    “
+                  </span>
+                  <p className="pb-4 text-justify">
+                    {testimonial}
+                  </p>
+                </div>
+                <div>
+                  <div className="flex justify-center py-3 text-shakespeare-500 dark:text-shakespeare-300">
+                    <ReviewStars rating={rating} />
+                  </div>
+                  <h2 className="text-center font-bold text-shakespeare-500 dark:text-shakespeare-300">
+                    {name}
+                  </h2>
+                  <h3 className="text-center text-shakespeare-700 dark:text-shakespeare-100">
+                    {position}, <a href={companyURL} className="underline">{company}</a>
+                  </h3>
+                </div>
+              </section>);
+            })}
           </div>
-        </section> */}
+        </section>
 
         {/* About Section */}
         <section className="my-32">
