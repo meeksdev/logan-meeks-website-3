@@ -8,27 +8,26 @@
 //   TextArea,
 // } from "react-aria-components";
 
-import ContactForm from "./contactForm";
+import ContactForm from './contactForm';
 
 export const metadata = {
-  title: "Contact | Logan Meeks Web Development",
-  description: "Get in touch with Logan Meeks Web Development for professional web design and development services. Contact us today to discuss your project.",
-  keywords: ["Logan Meeks Web Development", "contact", "web design", "web development", "get in touch", "contact information"],
+    title: 'Contact | Logan Meeks Web Development',
+    description:
+        'Get in touch with Logan Meeks Web Development for professional web design and development services. Contact us today to discuss your project.',
+    keywords: ['Logan Meeks Web Development', 'contact', 'web design', 'web development', 'get in touch', 'contact information'],
 };
 
 function ContactPage() {
-  return (
-    <>
-      {/* <title>Contact Me</title> */}
-      <main className="mx-auto mb-[32px] w-full max-w-[1080px] px-6 sm:px-8">
-        <h1 className="mb-2 mt-32 text-center text-6xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
-          Contact Me
-        </h1>
+    return (
+        <>
+            {/* <title>Contact Me</title> */}
+            <main className="mx-auto mb-[32px] w-full max-w-[1080px] px-6 sm:px-8">
+                <h1 className="mb-2 mt-32 text-center text-6xl font-bold text-shakespeare-700 dark:text-shakespeare-200">Contact Me</h1>
 
-        <section className="flex flex-wrap gap-x-8">
-          <ContactForm />
-          {/* Form */}
-          {/* <Form className="mt-6 min-w-72 flex-1">
+                <section className="flex flex-wrap gap-x-8">
+                    <ContactForm />
+                    {/* Form */}
+                    {/* <Form className="mt-6 min-w-72 flex-1">
             <TextField
               name="name"
               type="text"
@@ -73,25 +72,19 @@ function ContactPage() {
             </Button>
           </Form> */}
 
-          {/* Additional Contact Info */}
-          <section className="my-32 flex-1 text-center">
-            <a
-              href="mailto:loganmeeksllc@gmail.com"
-              className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare"
-            >
-              loganmeeksllc@gmail.com
-            </a>
-            <a
-              href="tel:+1-702-521-7541"
-              className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare"
-            >
-              +1 (702) 521-7541
-            </a>
-          </section>
-        </section>
-      </main>
-    </>
-  );
+                    {/* Additional Contact Info */}
+                    <section className="my-32 flex-1 text-center">
+                        <a href="mailto:loganmeeksllc@gmail.com" className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare">
+                            loganmeeksllc@gmail.com
+                        </a>
+                        <a href="tel:+1-702-521-7541" className="block rounded-full active:bg-shakespeare-600 hover:text-shakespeare">
+                            +1 (702) 521-7541
+                        </a>
+                    </section>
+                </section>
+            </main>
+        </>
+    );
 }
 
 export default ContactPage;
