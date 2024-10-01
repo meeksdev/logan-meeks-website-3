@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import portrait from "/public/aboutPage/portrait.jpg";
+import pupPic from "/public/aboutPage/pup-n-me.jpg";
 import {
   SiCplusplus,
   SiCsharp,
@@ -96,11 +97,22 @@ function AboutPage() {
 
           <section className="flex-1 text-justify">
             <div className="mx-auto min-w-[310px] max-w-[1080px]">
+              <Image
+                priority
+                src={pupPic}
+                alt="Photo Portrait of Logan Meeks"
+                placeholder="blur"
+                sizes="100vw"
+                className="m-auto rounded-lg border-2 max-h-80 w-auto border-shakespeare-600 object-cover dark:border-shakespeare-200"
+              />
+
               {/* About Me */}
               <section className="my-[32px]">
+              
                 <h2 className="my-2 text-center text-2xl font-bold text-shakespeare-700 dark:text-shakespeare-200">
                   Me
                 </h2>
+                
                 <p>
                   I am a detail-oriented web developer with a strong background
                   in mechanical engineering and a passion for technology. My
@@ -112,6 +124,7 @@ function AboutPage() {
                   creative problem-solving, I deliver reliable and efficient web
                   solutions.
                 </p>
+                
               </section>
 
               {/* My Mission */}
