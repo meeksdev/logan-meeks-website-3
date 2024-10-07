@@ -63,7 +63,7 @@ function AboutPage() {
                                 alt="Photo Portrait of Logan Meeks"
                                 placeholder="blur"
                                 sizes="100vw"
-                                className="m-auto rounded-lg border-2 max-h-80 w-auto border-shakespeare-600 object-cover dark:border-shakespeare-200"
+                                className="mb-[32px] mt-10 m-auto  rounded-lg border-2 max-h-80 w-auto border-shakespeare-600 object-cover dark:border-shakespeare-200"
                             />
 
                             {/* About Me */}
