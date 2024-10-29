@@ -5,6 +5,11 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
+/**
+ * ThemeSwitch component allows users to toggle between light and dark themes.
+ * It uses the `next-themes` library to manage theme state and `react-aria-components` for accessibility.
+ * @returns {JSX.Element} The rendered theme switch component.
+ */
 export default function ThemeSwitch() {
     const [mounted, setMounted] = useState(false);
     const { setTheme, resolvedTheme } = useTheme();
@@ -13,6 +18,10 @@ export default function ThemeSwitch() {
         setMounted(true);
     }, []);
 
+    /**
+     * Toggles the theme between light and dark modes.
+     * @param {boolean} selected - Indicates whether the dark mode is selected.
+     */
     function toggleDarkMode(selected) {
         if (!selected) {
             setTheme('light');

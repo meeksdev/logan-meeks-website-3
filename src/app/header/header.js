@@ -2,6 +2,11 @@ import Link from 'next/link';
 import ThemeSwitch from './themeSwitch';
 import Logo from '/public/Logo';
 
+/**
+ * Header component renders the header section of the website.
+ * It includes the company logo, navigation links, and a theme switcher.
+ * @returns {JSX.Element} The rendered header component.
+ */
 function Header() {
     return (
         <header className="sticky top-0 z-50 bg-shakespeare-700 px-6 py-2 text-2xl text-white dark:bg-shakespeare-bg">

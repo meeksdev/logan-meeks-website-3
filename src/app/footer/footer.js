@@ -1,10 +1,13 @@
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
-
-// import { FaF } from "react-icons/fa6";
 import Logo from '/public/Logo';
 
+/**
+ * Footer component renders the footer section of the website.
+ * It includes the company logo, contact information, and social media links.
+ * @returns {JSX.Element} The rendered footer component.
+ */
 function Footer() {
     return (
         <footer className="flex flex-col justify-around gap-y-8 bg-shakespeare-700 py-8 text-center text-white sm:flex-row dark:bg-shakespeare-bg">

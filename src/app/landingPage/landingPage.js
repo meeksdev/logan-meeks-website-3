@@ -4,16 +4,8 @@ import database from './assets/database.svg';
 import ecommerce from './assets/ecommerce.svg';
 import responsive from './assets/responsive.svg';
 import seo from './assets/seo.svg';
-
 import { RxStarFilled } from 'react-icons/rx';
-
-// import portfolioImage1 from "./assets/image-1.png";
-// import portfolioImage2 from "./assets/image-2.png";
-// import portfolioImage3 from "./assets/image-3.png";
-
-// import { Tab, TabList, TabPanel, Tabs } from "react-aria-components";
 import { Tab, TabList, TabPanel, Tabs } from './tabImports';
-
 import Image from 'next/image';
 
 const testimonials = [
@@ -28,17 +20,20 @@ const testimonials = [
     },
 ];
 
+/**
+ * Renders the landing page of the website.
+ * It includes sections for job positions and an about section.
+ * @returns {JSX.Element} The rendered landing page component.
+ */
 function LandingPage() {
     function ReviewStars({ rating }) {
-        // Ensure the rating is between 1 and 5
-        const validRating = Math.min(Math.max(rating, 1), 5);
+        const validRating = Math.min(Math.max(rating, 1), 5); // Ensure the rating is between 1 and 5
 
         return Array.from({ length: validRating }, (_, index) => <RxStarFilled key={index} className="size-6" />);
     }
 
     return (
         <>
-            {/* <title>Logan Meeks Web Development</title> */}
             <Hero />
             <main className="m-auto max-w-[1080px] px-6 sm:px-8">
                 {/* Services */}

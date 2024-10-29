@@ -1,9 +1,12 @@
-// import { Link } from 'react-aria-components';
-// import { NavLink } from "react-router-dom";
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroImage from '/public/Hero-Image.jpg';
 
+/**
+ * Hero component renders the hero section of the website.
+ * It includes a background image, a headline, a subheadline, and a call-to-action button.
+ * @returns {JSX.Element} The rendered hero component.
+ */
 function Hero() {
     return (
         <>

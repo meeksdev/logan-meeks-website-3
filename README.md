@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Logan Meeks Web Development
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This repository contains the source code for Logan Meeks' professional web development portfolio. The website showcases Logan's skills, projects, and services offered in web design and development.
 
-```bash
+## Table of Contents
+
+-   [Overview](#overview)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Technologies Used](#technologies-used)
+-   [Scripts](#scripts)
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/meeksdev/logan-meeks-website-3.git
+    cd logan-meeks-website
+    ```
+
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+## Usage
+
+To start the development server, run:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To build the project for production, run:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+-   Next.js: A React framework for server-side rendering and static site generation.
+-   React: A JavaScript library for building user interfaces.
+-   Tailwind CSS: A utility-first CSS framework for rapid UI development.
+-   EmailJS: A service to send emails directly from client-side JavaScript.
+-   React Icons: A library for including popular icons in React projects.
+-   Next Themes: A library for managing themes in Next.js applications.
+-   Google Analytics: A service for tracking and reporting website traffic.
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   `dev`: Starts the development server.
+-   `build`: Builds the project for production.
+-   `start`: Starts the production server.
+-   `lint`: Runs ESLint to check for linting errors.

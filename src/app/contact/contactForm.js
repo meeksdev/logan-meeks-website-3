@@ -2,12 +2,21 @@
 
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import { Button, FieldError, Form, Input, Label, TextField, TextArea } from 'react-aria-components';
 
+/**
+ * ContactForm component handles the rendering and submission of the contact form.
+ * Utilizes emailjs to send form data to a specified email service.
+ * @returns {JSX.Element} The rendered contact form component.
+ */
 export default function ContactForm() {
     const form = useRef();
 
+    /**
+     * Handles the form submission event.
+     * Prevents the default form submission behavior and sends the form data using emailjs.
+     * @param {Event} e - The form submission event.
+     */
     function handleSubmit(e) {
         e.preventDefault();
 
